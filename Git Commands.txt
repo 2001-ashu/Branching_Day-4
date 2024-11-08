@@ -1,0 +1,83 @@
+Austraxpc80@Austraxpc80 MINGW64 ~/Desktop/Branching & Merging
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+Austraxpc80@Austraxpc80 MINGW64 ~/Desktop/Branching & Merging
+$ git init
+Initialized empty Git repository in C:/Users/Austraxpc80/Desktop/Branching & Mer
+ging/.git/
+
+Austraxpc80@Austraxpc80 MINGW64 ~/Desktop/Branching & Merging (main)
+$ git status
+On branch main
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Austraxpc80@Austraxpc80 MINGW64 ~/Desktop/Branching & Merging (main)
+$ touch File1_A.txt
+
+Austraxpc80@Austraxpc80 MINGW64 ~/Desktop/Branching & Merging (main)
+$ vi File1_A.txt
+
+Austraxpc80@Austraxpc80 MINGW64 ~/Desktop/Branching & Merging (main)
+$ touch File2_A.txt
+
+Austraxpc80@Austraxpc80 MINGW64 ~/Desktop/Branching & Merging (main)
+$ vi File2_A.txt
+
+Austraxpc80@Austraxpc80 MINGW64 ~/Desktop/Branching & Merging (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        File1_A.txt
+        File2_A.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Austraxpc80@Austraxpc80 MINGW64 ~/Desktop/Branching & Merging (main)
+$ git .add
+git: '.add' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+Austraxpc80@Austraxpc80 MINGW64 ~/Desktop/Branching & Merging (main)
+$ git add .
+warning: in the working copy of 'File1_A.txt', LF will be replaced by CRLF the n
+ext time Git touches it
+warning: in the working copy of 'File2_A.txt', LF will be replaced by CRLF the n
+ext time Git touches it
+
+Austraxpc80@Austraxpc80 MINGW64 ~/Desktop/Branching & Merging (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   File1_A.txt
+        new file:   File2_A.txt
+
+
+Austraxpc80@Austraxpc80 MINGW64 ~/Desktop/Branching & Merging (main)
+$ git commit -m "Add"
+[main (root-commit) 811a9ca] Add
+ 2 files changed, 4 insertions(+)
+ create mode 100644 File1_A.txt
+ create mode 100644 File2_A.txt
+
+Austraxpc80@Austraxpc80 MINGW64 ~/Desktop/Branching & Merging (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Austraxpc80@Austraxpc80 MINGW64 ~/Desktop/Branching & Merging (main)
+$ git branch
+* main
